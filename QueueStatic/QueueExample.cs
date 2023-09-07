@@ -8,10 +8,10 @@ namespace QueueStatic
 {
     class QueueExample
     {
-        private int maxSize; // Tamaño máximo de la cola
-        private int front;    // Índice del elemento frontal
-        private int rear;     // Índice del elemento posterior
-        private int[] queue;  // Arreglo para almacenar elementos
+        private int maxSize; // Maximum size of the queue
+        private int front;    // Index of the front element
+        private int rear;     // Index of the rear element
+        private int[] queue;  // Array to store elements
 
         public QueueExample(int size)
         {
@@ -29,7 +29,7 @@ namespace QueueStatic
             }
             else
             {
-                Console.WriteLine("La cola está llena. No se puede agregar más elementos.");
+                Console.WriteLine("The queue is full. Cannot add more elements.");
             }
         }
 
@@ -41,7 +41,7 @@ namespace QueueStatic
             }
             else
             {
-                Console.WriteLine("La cola está vacía. No se puede sacar ningún elemento.");
+                Console.WriteLine("The queue is empty. Cannot dequeue any element.");
                 return -1;
             }
         }
@@ -59,10 +59,11 @@ namespace QueueStatic
             }
             else
             {
-                Console.WriteLine("La cola está vacía. No se puede consultar el elemento frontal.");
+                Console.WriteLine("The queue is empty. Cannot peek at the front element.");
                 return -1;
             }
         }
+
         public void DisplayQueue()
         {
             if (!IsEmpty())
@@ -75,7 +76,7 @@ namespace QueueStatic
             }
             else
             {
-                Console.WriteLine("The Queue is empty");
+                Console.WriteLine("The queue is empty.");
             }
         }
     }
